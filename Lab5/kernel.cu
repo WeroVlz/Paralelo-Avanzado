@@ -57,7 +57,6 @@ int main() {
 
     GPUErrorAssertion(cudaMemcpy(transposed, transposed_gpu, dataSize, cudaMemcpyDeviceToHost));
 
-    printf("VALUES AFTER TRANSPOSITION: \n");
     for (int i = 0; i < 15; ++i) {
         printf("transposed[%d] = %d\n", i, transposed[i]);
     }
